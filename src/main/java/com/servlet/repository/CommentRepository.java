@@ -8,8 +8,7 @@ import com.servlet.model.Comment;
 
 public class CommentRepository {
 
-    // ၁။ Comment အသစ် သိမ်းဆည်းရန်
- // CommentRepository.java ထဲက addComment ကို ဒီအတိုင်း လိုက်ပြင်ပေးပါ
+   
     public boolean addComment(int cheatsheetId, int userId, String commentText) throws Exception {
         // SQL Query ထဲက username ကို ဖြုတ်လိုက်ပါပြီ
         String sql = "INSERT INTO comments (cheatsheets_id, user_id, comment_text) VALUES (?, ?, ?)";
