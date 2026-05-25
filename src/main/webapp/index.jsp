@@ -221,7 +221,7 @@
                 %>
                     <div class="text-center py-5 text-muted bg-white rounded-3 border">
                         <i class="bi bi-journal-x fs-2 d-block mb-2"></i>
-                        <span>No cheatsheets available in the system yet.</span>
+                        <span>No Cheatsheet </span>
                     </div>
                 <% } %>
                 

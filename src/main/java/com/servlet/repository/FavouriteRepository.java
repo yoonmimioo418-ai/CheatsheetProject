@@ -40,7 +40,7 @@ public class FavouriteRepository {
         }
     }
 
-    // ၂။ User က Favorite လုပ်ထားဖူးသလား စစ်တဲ့ Method (JSP မှာ အသည်းပုံ နီ/မနီ ပြဖို့)
+   
     public boolean isFavourite(int userId, int cheatsheetId) throws Exception {
         String sql = "SELECT id FROM users_favourite WHERE user_id = ? AND cheatsheets_id = ?";
         try (Connection conn = DBConnection.getConnection();
@@ -48,7 +48,7 @@ public class FavouriteRepository {
             ps.setInt(1, userId);
             ps.setInt(2, cheatsheetId);
             try (ResultSet rs = ps.executeQuery()) {
-                return rs.next(); // ရှိရင် true, မရှိရင် false
+                return rs.next();
             }
         }
     }
