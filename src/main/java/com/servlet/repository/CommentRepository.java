@@ -10,7 +10,7 @@ public class CommentRepository {
 
    
     public boolean addComment(int cheatsheetId, int userId, String commentText) throws Exception {
-        // SQL Query ထဲက username ကို ဖြုတ်လိုက်ပါပြီ
+        
         String sql = "INSERT INTO comments (cheatsheets_id, user_id, comment_text) VALUES (?, ?, ?)";
         
         try (Connection conn = com.servlet.config.DBConnection.getConnection();
